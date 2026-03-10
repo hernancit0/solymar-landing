@@ -122,19 +122,19 @@ export default function Footer() {
               <li>
                 <a href="#productos" className="font-montserrat text-gray-400 text-xs sm:text-sm hover:text-[#C9A45C] transition-colors duration-300 flex items-center gap-2 group">
                   <span className="w-0 h-0.5 bg-[#C9A45C] group-hover:w-3 sm:group-hover:w-4 transition-all duration-300"></span>
-                  Sal Parrillera
+                  Sal grano grueso
                 </a>
               </li>
               <li>
                 <a href="#productos" className="font-montserrat text-gray-400 text-xs sm:text-sm hover:text-[#C9A45C] transition-colors duration-300 flex items-center gap-2 group">
                   <span className="w-0 h-0.5 bg-[#C9A45C] group-hover:w-3 sm:group-hover:w-4 transition-all duration-300"></span>
-                  Sal de Mesa
+                  Sal grano fino
                 </a>
               </li>
               <li>
                 <a href="#productos" className="font-montserrat text-gray-400 text-xs sm:text-sm hover:text-[#C9A45C] transition-colors duration-300 flex items-center gap-2 group">
                   <span className="w-0 h-0.5 bg-[#C9A45C] group-hover:w-3 sm:group-hover:w-4 transition-all duration-300"></span>
-                  Sal Grano Medio
+                  Sal grano medio
                 </a>
               </li>
               <li>

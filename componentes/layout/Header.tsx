@@ -64,6 +64,12 @@ export default function Header() {
               </a>
             </li>
             <li>
+              <a href="#bienestar" className="hover:text-[#C9A45C] transition-all duration-300 relative group">
+                Bienestar
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C9A45C] group-hover:w-full transition-all duration-300"></span>
+              </a>
+            </li>
+            <li>
               <a href="#contacto" className="hover:text-[#C9A45C] transition-all duration-300 relative group">
                 Contacto
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C9A45C] group-hover:w-full transition-all duration-300"></span>
@@ -121,6 +127,11 @@ export default function Header() {
           <li>
             <a href="#testimonios" onClick={closeMenu} className="hover:bg-[#C9A45C]/10 hover:text-[#C9A45C] transition-colors duration-300 block py-2.5 px-6 text-base">
               Testimonios
+            </a>
+          </li>
+          <li>
+            <a href="#bienestar" onClick={closeMenu} className="hover:bg-[#C9A45C]/10 hover:text-[#C9A45C] transition-colors duration-300 block py-2.5 px-6 text-base">
+              Bienestar
             </a>
           </li>
           <li>

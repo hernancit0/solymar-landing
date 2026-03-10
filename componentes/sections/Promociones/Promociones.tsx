@@ -1,12 +1,24 @@
 export default function Promociones() {
   return (
     <section id="promociones" className="relative bg-[#121212] py-12 sm:py-16 md:py-20 pt-20 sm:pt-24 md:pt-32 overflow-hidden">
+      {/* Textura de fondo */}
+      <div 
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage: 'url(/fondo1.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      ></div>
+      
       {/* Gradiente de transición suave desde Preparación */}
       <div className="absolute top-0 left-0 right-0 h-12 sm:h-16 bg-gradient-to-b from-[#121212] to-transparent"></div>
       
       {/* Elementos decorativos de fondo */}
-      <div className="hidden sm:block absolute top-1/2 left-10 w-24 h-24 md:w-32 md:h-32 border-2 border-[#C9A45C]/10 rounded-full animate-pulse-slow"></div>
-      <div className="hidden sm:block absolute top-1/3 right-10 w-32 h-32 md:w-40 md:h-40 border-2 border-[#C9A45C]/10 rounded-full animate-pulse-slow"></div>
+      <div className="hidden sm:block absolute top-1/4 left-10 w-48 h-48 md:w-64 md:h-64 border-2 border-[#C9A45C]/10 rounded-full animate-pulse-slow"></div>
+      <div className="hidden sm:block absolute bottom-1/4 right-10 w-64 h-64 md:w-80 md:h-80 border-2 border-[#C9A45C]/10 rounded-full animate-pulse-slow"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-[#C9A45C]/5 rounded-full blur-3xl"></div>
       
       {/* Título */}
       <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -68,7 +80,7 @@ export default function Promociones() {
               </div>
               
               <p className="font-montserrat text-white text-base sm:text-lg md:text-xl leading-relaxed">
-                Parrillera + Mesa + Grano Medio<br/>en un solo pack
+                Grano grueso + Grano fino + Grano medio<br/>en un solo pack
               </p>
               
               {/* Puntos decorativos */}

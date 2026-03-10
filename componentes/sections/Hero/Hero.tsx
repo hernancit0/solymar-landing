@@ -7,11 +7,11 @@ export default function Hero() {
         {/* Texto Izquierdo */}
         <div className="space-y-4 sm:space-y-5 md:space-y-6 md:-ml-12 animate-fade-in text-center md:text-left">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair text-white leading-tight px-2 sm:px-0">
-            SAL MARINA <span className="text-[#C9A45C] inline-block transform hover:scale-105 transition-transform">PREMIUM</span> PARA LOS QUE SABEN DE SABOR
+            SAL MARINA <span className="text-[#C9A45C] inline-block transform hover:scale-105 transition-transform">PREMIUM</span> PARA LOS QUE SABEN DE SABOR Y SALUD
           </h1>
           
           <p className="text-xs sm:text-sm md:text-base lg:text-lg font-montserrat text-gray-300 leading-relaxed px-2 sm:px-0">
-            Cristales naturales • Sin aditivos • Sabor auténtico
+            100% natural • Sin aditivos • Sabor auténtico
           </p>
           
           <button className="bg-[#C9A45C] text-white font-montserrat px-8 sm:px-10 py-3 sm:py-4 rounded-lg hover:bg-[#b8934d] hover:shadow-2xl hover:shadow-[#C9A45C]/50 transition-all duration-300 text-sm sm:text-base md:text-lg font-semibold mt-6 sm:mt-8 transform hover:scale-105 shadow-lg">
@@ -34,7 +34,7 @@ export default function Hero() {
           
           {/* Imagen del producto */}
           <Image 
-            src="/salymar-sinfondo-hd.png" 
+            src="/salymar-granogrueso-sinfondo.png" 
             alt="Sal Marina SolyMar" 
             width={400} 
             height={400}

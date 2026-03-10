@@ -18,8 +18,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "SolyMar - Sal Marina Premium | Sabor Auténtico para Tu Cocina",
-  description: "Descubre SolyMar, sal marina premium de Perú. Cristales naturales sin aditivos para parrilla, mesa y cocina. Sabor auténtico que transforma tus platillos.",
-  keywords: "sal marina, sal premium, sal parrillera, sal de mesa, sal peruana, sal natural, sal sin aditivos, SolyMar",
+  description: "Descubre SolyMar, sal marina premium de Perú. Cristales naturales sin aditivos en grano grueso, grano fino y grano medio. Sabor auténtico que transforma tus platillos.",
+  keywords: "sal marina, sal premium, sal grano grueso, sal grano fino, sal grano medio, sal peruana, sal natural, sal sin aditivos, SolyMar",
   authors: [{ name: "SolyMar" }],
   openGraph: {
     title: "SolyMar - Sal Marina Premium",

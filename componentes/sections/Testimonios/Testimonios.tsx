@@ -103,6 +103,32 @@ export default function Testimonios() {
       {/* Gradiente de transición suave desde Promociones */}
       <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-[#121212] to-transparent"></div>
       
+      {/* Cristales de sal decorativos de fondo */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Cristales grandes */}
+        <div className="absolute top-[10%] left-[5%] w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm transform rotate-12 rounded-sm shadow-lg"></div>
+        <div className="absolute top-[15%] right-[8%] w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-white/25 backdrop-blur-sm transform -rotate-45 rounded-sm shadow-lg"></div>
+        <div className="absolute top-[60%] left-[10%] w-14 h-14 sm:w-18 sm:h-18 md:w-22 md:h-22 bg-white/15 backdrop-blur-sm transform rotate-[30deg] rounded-sm shadow-md"></div>
+        <div className="absolute bottom-[20%] right-[12%] w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm transform -rotate-12 rounded-sm shadow-lg"></div>
+        
+        {/* Cristales medianos */}
+        <div className="absolute top-[30%] left-[15%] w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-white/30 backdrop-blur-sm transform rotate-45 rounded-sm shadow-md"></div>
+        <div className="absolute top-[45%] right-[20%] w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/25 backdrop-blur-sm transform -rotate-[60deg] rounded-sm shadow-md"></div>
+        <div className="absolute bottom-[15%] left-[20%] w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-white/20 backdrop-blur-sm transform rotate-[75deg] rounded-sm shadow-md"></div>
+        <div className="absolute top-[70%] right-[5%] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/25 backdrop-blur-sm transform rotate-[15deg] rounded-sm shadow-lg"></div>
+        
+        {/* Cristales pequeños */}
+        <div className="absolute top-[25%] right-[15%] w-6 h-6 sm:w-8 sm:h-8 bg-white/35 backdrop-blur-sm transform rotate-[20deg] rounded-sm shadow-sm"></div>
+        <div className="absolute top-[50%] left-[8%] w-7 h-7 sm:w-9 sm:h-9 bg-white/30 backdrop-blur-sm transform -rotate-[35deg] rounded-sm shadow-sm"></div>
+        <div className="absolute bottom-[30%] right-[25%] w-6 h-6 sm:w-8 sm:h-8 bg-white/25 backdrop-blur-sm transform rotate-[50deg] rounded-sm shadow-sm"></div>
+        <div className="absolute top-[80%] left-[30%] w-8 h-8 sm:w-10 sm:h-10 bg-white/30 backdrop-blur-sm transform -rotate-[25deg] rounded-sm shadow-sm"></div>
+        <div className="absolute bottom-[40%] left-[35%] w-6 h-6 sm:w-7 sm:h-7 bg-white/20 backdrop-blur-sm transform rotate-[65deg] rounded-sm shadow-sm"></div>
+        
+        {/* Cristales con brillo dorado */}
+        <div className="absolute top-[35%] right-[30%] w-10 h-10 sm:w-12 sm:h-12 bg-[#C9A45C]/10 backdrop-blur-sm border border-[#C9A45C]/30 transform rotate-[40deg] rounded-sm shadow-md"></div>
+        <div className="absolute bottom-[25%] left-[25%] w-8 h-8 sm:w-10 sm:h-10 bg-[#C9A45C]/15 backdrop-blur-sm border border-[#C9A45C]/30 transform -rotate-[55deg] rounded-sm shadow-md"></div>
+      </div>
+      
       {/* Título */}
       <div className="max-w-7xl mx-auto px-4 relative z-10 mb-12 sm:mb-14 md:mb-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair text-center text-[#121212] mb-4 sm:mb-5 md:mb-6 animate-fade-in">

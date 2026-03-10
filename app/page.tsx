@@ -4,6 +4,7 @@ import Productos from "@/componentes/sections/Productos/Productos"
 import Promociones from "@/componentes/sections/Promociones/Promociones"
 import Preparacion from "@/componentes/sections/Preparacion/Preparacion"
 import Testimonios from "@/componentes/sections/Testimonios/Testimonios"
+import Bienestar from "@/componentes/sections/Bienestar/Bienestar"
 import Contacto from "@/componentes/sections/Contacto/Contacto"
 import DelMar from "@/componentes/sections/DelMar/DelMar"
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Preparacion />
       <Promociones />
       <Testimonios />
+      <Bienestar />
       <Contacto />
       <DelMar />
     </main>
