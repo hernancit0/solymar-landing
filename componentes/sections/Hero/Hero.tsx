@@ -1,6 +1,8 @@
 import Image from "next/image"
 
 export default function Hero() {
+  const whatsappUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar sal marina premium. ¿Podrían compartir precios, presentaciones y promociones disponibles?")}`
+
   return (
     <section id="inicio" className="min-h-screen bg-[#121212] flex items-center px-4 py-16 sm:py-20 md:py-0 pt-24 sm:pt-28 md:pt-24 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
@@ -14,9 +16,15 @@ export default function Hero() {
             100% natural • Sin aditivos • Sabor auténtico
           </p>
           
-          <button className="bg-[#C9A45C] text-white font-montserrat px-8 sm:px-10 py-3 sm:py-4 rounded-lg hover:bg-[#b8934d] hover:shadow-2xl hover:shadow-[#C9A45C]/50 transition-all duration-300 text-sm sm:text-base md:text-lg font-semibold mt-6 sm:mt-8 transform hover:scale-105 shadow-lg">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#C9A45C] text-white font-montserrat px-8 sm:px-10 py-3 sm:py-4 rounded-lg hover:bg-[#b8934d] hover:shadow-2xl hover:shadow-[#C9A45C]/50 transition-all duration-300 text-sm sm:text-base md:text-lg font-semibold mt-6 sm:mt-8 transform hover:scale-105 shadow-lg"
+            aria-label="Comprar por WhatsApp"
+          >
             Comprar ahora
-          </button>
+          </a>
         </div>
         
         {/* Imagen Derecha */}

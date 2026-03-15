@@ -1,6 +1,10 @@
 import Image from "next/image"
 
 export default function Productos() {
+  const whatsappGruesoUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar SAL GRANO GRUESO. ¿Me comparten precio, presentación y disponibilidad?")}`
+  const whatsappFinoUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar SAL GRANO FINO. ¿Me comparten precio, presentación y disponibilidad?")}`
+  const whatsappMedioUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar SAL GRANO MEDIO. ¿Me comparten precio, presentación y disponibilidad?")}`
+
   return (
     <section id="productos" className="relative bg-[#121212] py-12 sm:py-16 md:py-20 px-4 pt-20 sm:pt-24 md:pt-32 overflow-hidden">
       {/* Textura de fondo */}
@@ -80,9 +84,15 @@ export default function Productos() {
               </ul>
             </div>
             
-            <button className="bg-[#C9A45C] text-white font-montserrat px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-[#b8934d] transition-all duration-300 text-sm sm:text-base md:text-lg font-semibold mt-auto shadow-lg hover:shadow-xl relative z-10">
+            <a
+              href={whatsappGruesoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#C9A45C] text-white font-montserrat px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-[#b8934d] transition-all duration-300 text-sm sm:text-base md:text-lg font-semibold mt-auto shadow-lg hover:shadow-xl relative z-10"
+              aria-label="Comprar sal grano grueso por WhatsApp"
+            >
               Comprar ahora
-            </button>
+            </a>
           </div>
           
           {/* Card 2 - Sal grano fino */}
@@ -130,9 +140,15 @@ export default function Productos() {
               </ul>
             </div>
             
-            <button className="bg-[#121212] text-white font-montserrat px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-gray-900 transition-all duration-300 text-sm sm:text-base md:text-lg font-semibold mt-auto shadow-lg hover:shadow-xl relative z-10">
+            <a
+              href={whatsappFinoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#121212] text-white font-montserrat px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-gray-900 transition-all duration-300 text-sm sm:text-base md:text-lg font-semibold mt-auto shadow-lg hover:shadow-xl relative z-10"
+              aria-label="Comprar sal grano fino por WhatsApp"
+            >
               Comprar ahora
-            </button>
+            </a>
           </div>
           
           {/* Card 3 - Sal grano medio */}
@@ -180,9 +196,15 @@ export default function Productos() {
               </ul>
             </div>
             
-            <button className="bg-[#C9A45C] text-white font-montserrat px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-[#b8934d] transition-all duration-300 text-sm sm:text-base md:text-lg font-semibold mt-auto shadow-lg hover:shadow-xl relative z-10">
+            <a
+              href={whatsappMedioUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#C9A45C] text-white font-montserrat px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-[#b8934d] transition-all duration-300 text-sm sm:text-base md:text-lg font-semibold mt-auto shadow-lg hover:shadow-xl relative z-10"
+              aria-label="Comprar sal grano medio por WhatsApp"
+            >
               Comprar ahora
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -1,4 +1,6 @@
 export default function Promociones() {
+  const whatsappPromocionesUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Me interesa la PROMOCIÓN ESPECIAL. ¿Podrían enviarme el detalle de la oferta y cómo comprar?")}`
+
   return (
     <section id="promociones" className="relative bg-[#121212] py-12 sm:py-16 md:py-20 pt-20 sm:pt-24 md:pt-32 overflow-hidden">
       {/* Textura de fondo */}
@@ -100,9 +102,15 @@ export default function Promociones() {
       {/* Botón Obtener Oferta */}
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center space-y-2 sm:space-y-3 animate-fade-in">
-          <button className="bg-[#C9A45C] hover:bg-[#B8934B] text-black font-montserrat font-bold text-base sm:text-lg px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-lg shadow-lg hover:shadow-[0_0_30px_rgba(201,164,92,0.6)] transition-all duration-300 transform hover:scale-105 uppercase tracking-wider">
+          <a
+            href={whatsappPromocionesUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#C9A45C] hover:bg-[#B8934B] text-black font-montserrat font-bold text-base sm:text-lg px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-lg shadow-lg hover:shadow-[0_0_30px_rgba(201,164,92,0.6)] transition-all duration-300 transform hover:scale-105 uppercase tracking-wider"
+            aria-label="Obtener promoción por WhatsApp"
+          >
             Obtener Oferta
-          </button>
+          </a>
           <p className="font-montserrat text-gray-400 text-xs sm:text-sm italic">
             promoción por tiempo limitado
           </p>
