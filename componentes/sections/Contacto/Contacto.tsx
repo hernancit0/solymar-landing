@@ -47,7 +47,10 @@ export default function Contacto() {
               <div className="w-16 sm:w-20 h-0.5 bg-[#C9A45C]"></div>
             </div>
             
-            <form className="space-y-4 sm:space-y-5">
+            <form action="https://formsubmit.co/saldemarsolymar@gmail.com" method="POST" className="space-y-4 sm:space-y-5">
+              <input type="hidden" name="_subject" value="Nuevo mensaje desde formulario web - SolyMar" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
               {/* Nombre y Apellidos */}
               <div className="group">
                 <label htmlFor="nombre" className="block font-montserrat text-gray-300 text-sm sm:text-base font-semibold mb-1.5 sm:mb-2 group-focus-within:text-[#C9A45C] transition-colors">
@@ -85,42 +88,42 @@ export default function Contacto() {
                   placeholder="tucorreo@ejemplo.com"
                 />
               </div>
-              
-              {/* Asunto */}
+
+              {/* Número de celular */}
               <div className="group">
-                <label htmlFor="asunto" className="block font-montserrat text-gray-300 text-sm sm:text-base font-semibold mb-1.5 sm:mb-2 group-focus-within:text-[#C9A45C] transition-colors">
+                <label htmlFor="celular" className="block font-montserrat text-gray-300 text-sm sm:text-base font-semibold mb-1.5 sm:mb-2 group-focus-within:text-[#C9A45C] transition-colors">
                   <span className="flex items-center gap-2">
                     <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                     </svg>
-                    Asunto
+                    Número de celular
                   </span>
                 </label>
                 <input
-                  type="text"
-                  id="asunto"
-                  name="asunto"
+                  type="tel"
+                  id="celular"
+                  name="celular"
                   className="w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base rounded-lg bg-[#121212] border-2 border-gray-700 focus:border-[#C9A45C] focus:outline-none font-montserrat transition-all duration-300 text-white placeholder-gray-500 hover:border-gray-600"
-                  placeholder="¿Sobre qué quieres consultar?"
+                  placeholder="+51 999 999 999"
                 />
               </div>
               
-              {/* Descripción */}
+              {/* Mensaje */}
               <div className="group">
-                <label htmlFor="descripcion" className="block font-montserrat text-gray-300 text-sm sm:text-base font-semibold mb-1.5 sm:mb-2 group-focus-within:text-[#C9A45C] transition-colors">
+                <label htmlFor="mensaje" className="block font-montserrat text-gray-300 text-sm sm:text-base font-semibold mb-1.5 sm:mb-2 group-focus-within:text-[#C9A45C] transition-colors">
                   <span className="flex items-center gap-2">
                     <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
                     </svg>
-                    Descripción
+                    Mensaje
                   </span>
                 </label>
                 <textarea
-                  id="descripcion"
-                  name="descripcion"
+                  id="mensaje"
+                  name="mensaje"
                   rows={4}
                   className="w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base rounded-lg bg-[#121212] border-2 border-gray-700 focus:border-[#C9A45C] focus:outline-none font-montserrat resize-none transition-all duration-300 text-white placeholder-gray-500 hover:border-gray-600"
-                  placeholder="Cuéntanos más detalles..."
+                  placeholder="Cuéntanos tu consulta (motivo + detalles)..."
                 ></textarea>
               </div>
               

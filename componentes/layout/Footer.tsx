@@ -166,8 +166,8 @@ export default function Footer() {
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 fill-[#C9A45C] flex-shrink-0 mt-0.5 sm:mt-1" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
-                <a href="mailto:contacto@solymar.com" className="font-montserrat text-gray-400 text-xs sm:text-sm hover:text-[#C9A45C] transition-colors">
-                  contacto@solymar.com
+                <a href="mailto:saldemarsolymar@gmail.com" className="font-montserrat text-gray-400 text-xs sm:text-sm hover:text-[#C9A45C] transition-colors">
+                  saldemarsolymar@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
