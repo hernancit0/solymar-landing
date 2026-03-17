@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   description: "Descubre SolyMar, sal marina premium de Perú. Cristales naturales sin aditivos en grano grueso, grano fino y grano medio. Sabor auténtico que transforma tus platillos.",
   keywords: "sal marina, sal premium, sal grano grueso, sal grano fino, sal grano medio, sal peruana, sal natural, sal sin aditivos, SolyMar",
   authors: [{ name: "SolyMar" }],
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "SolyMar - Sal Marina Premium",
     description: "Sal marina premium de origen peruano. Cristales naturales para los que saben de sabor.",

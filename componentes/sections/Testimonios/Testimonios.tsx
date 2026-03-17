@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useRef, useState, useEffect } from 'react'
 
 export default function Testimonios() {
@@ -14,35 +15,40 @@ export default function Testimonios() {
       nombre: "Hernán Morales",
       profesion: "Analista de Datos",
       comentario: "La sal de SolyMar transformó completamente mis parrilladas. Los cristales gruesos se distribuyen perfectamente y el sabor es incomparable.",
-      estrellas: 5
+      estrellas: 5,
+      foto: "/testimonio1.avif"
     },
     {
       id: 2,
-      nombre: "María González",
+      nombre: "Miguel González",
       profesion: "Chef Profesional",
       comentario: "Como chef, la calidad es fundamental. SolyMar ofrece una pureza excepcional que resalta los sabores naturales de cada ingrediente.",
-      estrellas: 5
+      estrellas: 5,
+      foto: "/testimonio2.avif"
     },
     {
       id: 3,
       nombre: "Carlos Ramírez",
       profesion: "Restaurantero",
       comentario: "Mis clientes notan la diferencia. Desde que uso SolyMar en mi restaurante, los comentarios sobre el sabor han aumentado notablemente.",
-      estrellas: 5
+      estrellas: 5,
+      foto: "/testimonio3.avif"
     },
     {
       id: 4,
       nombre: "Ana Jiménez",
       profesion: "Ama de Casa",
       comentario: "Perfecta para el uso diario. La textura es ideal y la presentación del envase le da un toque premium a mi cocina.",
-      estrellas: 5
+      estrellas: 5,
+      foto: "/testimonio4.avif"
     },
     {
       id: 5,
-      nombre: "Roberto Silva",
-      profesion: "Parrillero Profesional",
+      nombre: "Rosa Silva",
+      profesion: "Parrillera Profesional",
       comentario: "Llevo años haciendo parrilladas y esta es la mejor sal que he probado. El grano medio es perfecto para carnes a la parrilla.",
-      estrellas: 5
+      estrellas: 5,
+      foto: "/testimonio5.avif"
     }
   ];
 
@@ -161,10 +167,21 @@ export default function Testimonios() {
             {testimoniosInfinitos.map((testimonio, index) => (
             <div
               key={`${testimonio.id}-${index}`}
-              className="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[400px] xl:w-[440px] 2xl:w-[480px] bg-[#F5F3EF] rounded-lg p-4 sm:p-5 md:p-6 xl:p-7 shadow-lg"
+              className="group relative flex-shrink-0 w-[280px] sm:w-[340px] md:w-[400px] xl:w-[440px] 2xl:w-[480px] bg-gradient-to-br from-[#FEFCF8] via-[#F7F3EC] to-[#EFE8DB] rounded-2xl border border-white/70 p-4 sm:p-5 md:p-6 xl:p-7 shadow-[0_10px_30px_rgba(0,0,0,0.16)] hover:shadow-[0_18px_38px_rgba(18,18,18,0.22)] transition-all duration-300"
             >
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#C9A45C]/75 to-transparent rounded-t-2xl"></div>
+
+              {/* Comillas decorativas */}
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 text-[#C9A45C]/25 font-playfair text-5xl sm:text-6xl leading-none select-none pointer-events-none">
+                &ldquo;
+              </div>
+
               {/* Estrellas */}
-              <div className="flex gap-1 mb-3 sm:mb-4">
+              <div className="flex items-center justify-between mb-3 sm:mb-4 relative z-10">
+                <span className="font-montserrat text-[10px] sm:text-xs uppercase tracking-[0.2em] text-[#8A7448] font-semibold">
+                  Cliente Verificado
+                </span>
+                <div className="flex gap-1">
                 {[...Array(testimonio.estrellas)].map((_, i) => (
                   <svg
                     key={i}
@@ -174,28 +191,33 @@ export default function Testimonios() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 ))}
+                </div>
               </div>
               
               {/* Comentario */}
-              <p className="font-montserrat text-gray-700 text-sm sm:text-base xl:text-lg leading-relaxed mb-4 sm:mb-5 md:mb-6 min-h-[100px] sm:min-h-[110px] md:min-h-[120px] xl:min-h-[145px]">
+              <p className="font-montserrat text-[#3A3A3A] text-sm sm:text-base xl:text-lg leading-relaxed mb-4 sm:mb-5 md:mb-6 min-h-[100px] sm:min-h-[110px] md:min-h-[120px] xl:min-h-[145px] relative z-10">
                 "{testimonio.comentario}"
               </p>
               
               {/* Usuario */}
-              <div className="flex items-center gap-2 sm:gap-3">
-                {/* Icono de usuario */}
-                <div className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-[#C9A45C] flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 fill-white" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                  </svg>
+              <div className="flex items-center gap-2 sm:gap-3 pt-3 border-t border-[#C9A45C]/25 relative z-10">
+                {/* Foto del cliente */}
+                <div className="relative w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-[#C9A45C]/70 shadow-sm flex-shrink-0">
+                  <Image
+                    src={testimonio.foto}
+                    alt={`Foto de ${testimonio.nombre}`}
+                    fill
+                    className="object-cover"
+                    sizes="48px"
+                  />
                 </div>
                 
                 {/* Nombre y profesión */}
                 <div>
-                  <p className="font-montserrat font-bold text-[#121212] text-sm sm:text-base">
+                  <p className="font-montserrat font-bold text-[#1A1A1A] text-sm sm:text-base">
                     {testimonio.nombre}
                   </p>
-                  <p className="font-montserrat text-gray-600 text-xs sm:text-sm">
+                  <p className="font-montserrat text-[#6C6C6C] text-xs sm:text-sm">
                     {testimonio.profesion}
                   </p>
                 </div>

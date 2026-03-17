@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="transparent" />
+  <image
+    href="/icono-salymar-sinfondo.png"
+    x="8"
+    y="8"
+    width="48"
+    height="48"
+    transform="rotate(90 32 32)"
+    preserveAspectRatio="xMidYMid meet"
+  />
+</svg>
