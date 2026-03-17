@@ -42,7 +42,7 @@ export default function Hero() {
           
           {/* Imagen del producto */}
           <Image 
-            src="/salymar-granogrueso-sinfondo.png" 
+            src="/solymar.hero.png" 
             alt="Sal Marina SolyMar" 
             width={400} 
             height={400}
