@@ -85,10 +85,10 @@ export default function Beneficios() {
         <div className="absolute top-[48%] right-[38%] w-9 h-9 sm:w-11 sm:h-11 bg-[#C9A45C]/12 backdrop-blur-sm border border-[#C9A45C]/35 transform rotate-[80deg] rounded-sm shadow-md"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-[88rem] mx-auto relative z-10">
         {/* Título */}
         <div className="text-center mb-12 sm:mb-14 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair text-gray-900 mb-3 sm:mb-4 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-playfair text-gray-900 mb-3 sm:mb-4 animate-fade-in">
             BENEFICIOS
           </h2>
           
@@ -104,7 +104,7 @@ export default function Beneficios() {
         </div>
         
         {/* Grid 3x2 de beneficios con flip cards */}
-        <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 xl:gap-6 max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
           {beneficios.map((beneficio, index) => (
             <div 
               key={index}

@@ -10,8 +10,8 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false)
 
   return (
-    <header className="bg-[#121212]/95 backdrop-blur-md text-white px-3 sm:px-4 md:px-6 fixed top-0 left-0 right-0 z-50 shadow-lg shadow-black/50 border-b border-[#C9A45C]/20">
-      <div className="flex items-center justify-between py-2 sm:py-3 max-w-7xl mx-auto">
+    <header className="bg-[#121212]/95 backdrop-blur-md text-white px-3 sm:px-4 md:px-6 xl:px-10 2xl:px-14 fixed top-0 left-0 right-0 z-50 shadow-lg shadow-black/50 border-b border-[#C9A45C]/20">
+      <div className="flex items-center justify-between py-2 sm:py-3 2xl:py-4 max-w-[88rem] mx-auto">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-1.5 sm:gap-2 transform hover:scale-105 transition-transform duration-300">
           <Image 
@@ -21,12 +21,12 @@ export default function Header() {
             height={45}
             className="object-contain rotate-90 w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11"
           />
-          <h1 className="text-lg sm:text-xl md:text-2xl font-playfair">SolyMar</h1>
+          <h1 className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-playfair">SolyMar</h1>
         </a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
-          <ul className="flex gap-4 md:gap-6 lg:gap-8 font-montserrat text-xs md:text-sm">
+          <ul className="flex gap-4 md:gap-6 lg:gap-8 xl:gap-10 2xl:gap-12 font-montserrat text-xs md:text-sm xl:text-base">
             <li>
               <a href="#inicio" className="hover:text-[#C9A45C] transition-all duration-300 relative group">
                 Inicio

@@ -23,8 +23,8 @@ export default function Promociones() {
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-[#C9A45C]/5 rounded-full blur-3xl"></div>
       
       {/* Título */}
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair text-center text-white mb-4 sm:mb-5 md:mb-6 animate-fade-in">
+      <div className="max-w-[88rem] mx-auto px-4 sm:px-6 md:px-8 xl:px-10 2xl:px-14 relative z-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-playfair text-center text-white mb-4 sm:mb-5 md:mb-6 animate-fade-in">
           PROMOCIONES ESPECIALES
         </h2>
         
@@ -42,7 +42,7 @@ export default function Promociones() {
         <div className="bg-black border-t-2 border-b-2 sm:border-t-4 sm:border-b-4 border-[#C9A45C] shadow-[0_0_20px_rgba(201,164,92,0.5)] overflow-hidden relative">
           <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#C9A45C]">
             {/* Promoción izquierda - 15% OFF */}
-            <div className="p-6 sm:p-8 md:p-12 text-center space-y-3 sm:space-y-4 relative group">
+            <div className="p-6 sm:p-8 md:p-12 xl:p-16 text-center space-y-3 sm:space-y-4 relative group">
               {/* Badge "NUEVO CLIENTE" */}
               <div className="inline-block bg-[#C9A45C] text-black text-[10px] sm:text-xs font-montserrat font-bold px-3 sm:px-4 py-1 rounded-full mb-1 sm:mb-2">
                 NUEVO CLIENTE
@@ -66,7 +66,7 @@ export default function Promociones() {
             </div>
             
             {/* Promoción derecha - Pack 3 variedades */}
-            <div className="p-6 sm:p-8 md:p-12 text-center space-y-3 sm:space-y-4 relative group">
+            <div className="p-6 sm:p-8 md:p-12 xl:p-16 text-center space-y-3 sm:space-y-4 relative group">
               {/* Badge "PACK COMPLETO" */}
               <div className="inline-block bg-[#C9A45C] text-black text-[10px] sm:text-xs font-montserrat font-bold px-3 sm:px-4 py-1 rounded-full mb-1 sm:mb-2">
                 PACK COMPLETO
@@ -100,7 +100,7 @@ export default function Promociones() {
       </div>
       
       {/* Botón Obtener Oferta */}
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="max-w-[88rem] mx-auto px-4 sm:px-6 md:px-8 xl:px-10 2xl:px-14 relative z-10">
         <div className="text-center space-y-2 sm:space-y-3 animate-fade-in">
           <a
             href={whatsappPromocionesUrl}

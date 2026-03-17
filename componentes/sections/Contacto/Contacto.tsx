@@ -13,10 +13,10 @@ export default function Contacto() {
       <div className="hidden sm:block absolute bottom-1/4 right-10 w-64 h-64 md:w-80 md:h-80 border-2 border-[#C9A45C]/10 rounded-full animate-pulse-slow"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-[#C9A45C]/5 rounded-full blur-3xl"></div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-[88rem] mx-auto px-4 sm:px-6 md:px-8 xl:px-10 2xl:px-14 relative z-10">
         {/* Título y subtítulo */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair text-white mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-playfair text-white mb-3 sm:mb-4">
             HABLEMOS
           </h2>
           
@@ -31,9 +31,9 @@ export default function Contacto() {
         </div>
         
         {/* Grid de dos cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 animate-fade-in-delay">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 xl:gap-10 animate-fade-in-delay">
           {/* Card Formulario - Izquierda */}
-          <div className="bg-[#1F1F1F] rounded-lg p-5 sm:p-6 md:p-8 shadow-xl border border-[#C9A45C]/20 hover:border-[#C9A45C]/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(201,164,92,0.2)]">
+          <div className="bg-[#1F1F1F] rounded-lg p-5 sm:p-6 md:p-8 xl:p-10 shadow-xl border border-[#C9A45C]/20 hover:border-[#C9A45C]/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(201,164,92,0.2)]">
             <h3 className="text-2xl sm:text-2xl md:text-3xl font-playfair text-white font-bold mb-2 sm:mb-3 text-center">
               ESCRÍBENOS
             </h3>
@@ -143,7 +143,7 @@ export default function Contacto() {
           </div>
           
           {/* Card WhatsApp - Derecha */}
-          <div className="bg-[#1F1F1F] rounded-lg p-5 sm:p-6 md:p-8 shadow-xl border border-[#C9A45C]/20 hover:border-[#C9A45C]/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(201,164,92,0.2)] flex flex-col items-center justify-center space-y-4 sm:space-y-6">
+          <div className="bg-[#1F1F1F] rounded-lg p-5 sm:p-6 md:p-8 xl:p-10 shadow-xl border border-[#C9A45C]/20 hover:border-[#C9A45C]/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(201,164,92,0.2)] flex flex-col items-center justify-center space-y-4 sm:space-y-6">
             {/* Logo WhatsApp con efecto */}
             <div className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 shadow-2xl transform hover:scale-110 transition-transform duration-300">
               <Image

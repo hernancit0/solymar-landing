@@ -130,8 +130,8 @@ export default function Testimonios() {
       </div>
       
       {/* Título */}
-      <div className="max-w-7xl mx-auto px-4 relative z-10 mb-12 sm:mb-14 md:mb-16">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair text-center text-[#121212] mb-4 sm:mb-5 md:mb-6 animate-fade-in">
+      <div className="max-w-[88rem] mx-auto px-4 sm:px-6 md:px-8 xl:px-10 2xl:px-14 relative z-10 mb-12 sm:mb-14 md:mb-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-playfair text-center text-[#121212] mb-4 sm:mb-5 md:mb-6 animate-fade-in">
           TESTIMONIOS
         </h2>
         
@@ -161,7 +161,7 @@ export default function Testimonios() {
             {testimoniosInfinitos.map((testimonio, index) => (
             <div
               key={`${testimonio.id}-${index}`}
-              className="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[400px] bg-[#F5F3EF] rounded-lg p-4 sm:p-5 md:p-6 shadow-lg"
+              className="flex-shrink-0 w-[280px] sm:w-[340px] md:w-[400px] xl:w-[440px] 2xl:w-[480px] bg-[#F5F3EF] rounded-lg p-4 sm:p-5 md:p-6 xl:p-7 shadow-lg"
             >
               {/* Estrellas */}
               <div className="flex gap-1 mb-3 sm:mb-4">
@@ -177,7 +177,7 @@ export default function Testimonios() {
               </div>
               
               {/* Comentario */}
-              <p className="font-montserrat text-gray-700 text-sm sm:text-base leading-relaxed mb-4 sm:mb-5 md:mb-6 min-h-[100px] sm:min-h-[110px] md:min-h-[120px]">
+              <p className="font-montserrat text-gray-700 text-sm sm:text-base xl:text-lg leading-relaxed mb-4 sm:mb-5 md:mb-6 min-h-[100px] sm:min-h-[110px] md:min-h-[120px] xl:min-h-[145px]">
                 "{testimonio.comentario}"
               </p>
               

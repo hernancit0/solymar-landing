@@ -76,9 +76,9 @@ export default function Preparacion() {
       <div className="hidden sm:block absolute bottom-1/4 right-10 w-64 h-64 md:w-80 md:h-80 border-2 border-[#C9A45C]/10 rounded-full animate-pulse-slow"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-[#C9A45C]/5 rounded-full blur-3xl"></div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-[88rem] mx-auto relative z-10">
         {/* Título */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair text-center text-white mb-4 sm:mb-5 md:mb-6 animate-fade-in px-2 sm:px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-playfair text-center text-white mb-4 sm:mb-5 md:mb-6 animate-fade-in px-2 sm:px-4">
           EL SABOR SE CREA EN LA PREPARACIÓN
         </h2>
         
@@ -88,26 +88,26 @@ export default function Preparacion() {
         </div>
 
         {/* Carrusel Container */}
-        <div className="relative py-8 sm:py-10 md:py-12">
+        <div className="relative py-8 sm:py-10 md:py-12 px-8 sm:px-10 md:px-12 lg:px-14 xl:px-16">
           {/* Botón Anterior */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 z-20 bg-[#C9A45C] hover:bg-[#b8934d] text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(201,164,92,0.5)] transition-all duration-300 transform hover:scale-110"
+            className="absolute left-0 sm:left-1 md:left-2 lg:left-3 xl:left-4 2xl:left-5 top-1/2 -translate-y-1/2 z-20 group h-11 w-11 sm:h-12 sm:w-12 xl:h-14 xl:w-14 rounded-full border border-white/30 bg-white/10 backdrop-blur-md text-white shadow-[0_8px_24px_rgba(0,0,0,0.35)] hover:bg-[#C9A45C]/90 hover:border-[#C9A45C] hover:shadow-[0_0_24px_rgba(201,164,92,0.45)] transition-all duration-300 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A45C] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121212]"
             aria-label="Anterior"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M14.5 5.5L8 12l6.5 6.5" />
             </svg>
           </button>
 
           {/* Botón Siguiente */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 z-20 bg-[#C9A45C] hover:bg-[#b8934d] text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(201,164,92,0.5)] transition-all duration-300 transform hover:scale-110"
+            className="absolute right-0 sm:right-1 md:right-2 lg:right-3 xl:right-4 2xl:right-5 top-1/2 -translate-y-1/2 z-20 group h-11 w-11 sm:h-12 sm:w-12 xl:h-14 xl:w-14 rounded-full border border-white/30 bg-white/10 backdrop-blur-md text-white shadow-[0_8px_24px_rgba(0,0,0,0.35)] hover:bg-[#C9A45C]/90 hover:border-[#C9A45C] hover:shadow-[0_0_24px_rgba(201,164,92,0.45)] transition-all duration-300 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A45C] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121212]"
             aria-label="Siguiente"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M9.5 5.5L16 12l-6.5 6.5" />
             </svg>
           </button>
 
@@ -118,34 +118,34 @@ export default function Preparacion() {
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {preparaciones.map((prep, index) => (
-                <div key={prep.id} className="w-full flex-shrink-0 px-4 sm:px-8 md:px-12">
-                  <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center min-h-[450px] sm:min-h-[500px] md:min-h-[550px] ${prep.layout === 'text-right' ? 'md:grid-flow-dense' : ''}`}>
+                <div key={prep.id} className="w-full flex-shrink-0 px-2 sm:px-4 md:px-8 xl:px-12">
+                  <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-center min-h-[450px] sm:min-h-[500px] md:min-h-[550px] xl:min-h-[620px] ${prep.layout === 'text-right' ? 'md:grid-flow-dense' : ''}`}>
                     {/* Texto */}
                     <div className={`space-y-4 sm:space-y-5 md:space-y-6 px-2 sm:px-4 ${prep.layout === 'text-right' ? 'md:col-start-2' : ''}`}>
-                      <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-playfair text-[#C9A45C] mb-3 sm:mb-4">
+                      <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-playfair text-[#C9A45C] mb-3 sm:mb-4">
                         {prep.titulo}
                       </h3>
                       
                       {/* Línea decorativa pequeña */}
                       <div className="w-16 sm:w-20 h-0.5 bg-[#C9A45C] mb-3 sm:mb-4"></div>
                       
-                      <p className="font-montserrat text-gray-300 text-base sm:text-lg leading-relaxed">
+                      <p className="font-montserrat text-gray-300 text-base sm:text-lg xl:text-xl leading-relaxed">
                         {prep.descripcion}
                       </p>
                     </div>
                     
                     {/* Imagen con decoración */}
-                    <div className={`flex justify-center items-center relative min-h-[350px] sm:min-h-[400px] md:min-h-[450px] ${prep.layout === 'text-right' ? 'md:col-start-1 md:row-start-1' : ''}`}>
+                    <div className={`flex justify-center items-center relative min-h-[350px] sm:min-h-[400px] md:min-h-[450px] xl:min-h-[520px] ${prep.layout === 'text-right' ? 'md:col-start-1 md:row-start-1' : ''}`}>
                       {/* Cuadrado decorativo de fondo */}
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] border-2 sm:border-4 border-[#C9A45C]/30 rounded-lg transform rotate-6 transition-all duration-700"></div>
+                        <div className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] xl:w-[460px] xl:h-[460px] border-2 sm:border-4 border-[#C9A45C]/30 rounded-lg transform rotate-6 transition-all duration-700"></div>
                       </div>
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-[260px] h-[260px] sm:w-[330px] sm:h-[330px] md:w-[380px] md:h-[380px] bg-[#C9A45C]/5 rounded-lg transform -rotate-3 transition-all duration-700"></div>
+                        <div className="w-[260px] h-[260px] sm:w-[330px] sm:h-[330px] md:w-[380px] md:h-[380px] xl:w-[430px] xl:h-[430px] bg-[#C9A45C]/5 rounded-lg transform -rotate-3 transition-all duration-700"></div>
                       </div>
                       
                       {/* Imagen */}
-                      <div className="relative w-full max-w-[300px] sm:max-w-[350px] md:max-w-md z-10">
+                      <div className="relative w-full max-w-[300px] sm:max-w-[350px] md:max-w-md xl:max-w-xl z-10">
                         <Image 
                           src={prep.imagen}
                           alt={prep.alt}

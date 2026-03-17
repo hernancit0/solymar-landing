@@ -1,6 +1,8 @@
 import Image from "next/image"
 
 export default function Bienestar() {
+  const youtubeUrl = "https://www.youtube.com/watch?v=pjMZ3HeZEPk"
+
   const beneficios = [
     {
       icono: "💎",
@@ -60,10 +62,10 @@ export default function Bienestar() {
         <div className="absolute bottom-[20%] left-[28%] w-8 h-8 sm:w-10 sm:h-10 bg-[#C9A45C]/15 backdrop-blur-sm border border-[#C9A45C]/30 transform rotate-[65deg] rounded-sm shadow-md"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-[88rem] mx-auto px-4 sm:px-6 md:px-8 xl:px-10 2xl:px-14 relative z-10">
         {/* Título */}
         <div className="text-center mb-12 sm:mb-14 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair text-[#121212] mb-3 sm:mb-4 animate-fade-in leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-playfair text-[#121212] mb-3 sm:mb-4 animate-fade-in leading-tight">
             BIENESTAR QUE COMIENZA
             <span className="block text-[#C9A45C] mt-2">CON LO NATURAL</span>
           </h2>
@@ -77,10 +79,35 @@ export default function Bienestar() {
           <p className="text-base sm:text-lg md:text-xl font-montserrat text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Beneficios de la sal marina respaldados por nutrición y estudios científicos.
           </p>
+
+          {/* Cita recomendada */}
+          <div className="mt-6 sm:mt-8 max-w-4xl mx-auto w-full">
+            <a
+              href={youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-start gap-3 sm:gap-4 bg-white/85 hover:bg-white border border-[#C9A45C]/35 rounded-xl px-4 sm:px-5 md:px-6 py-3 sm:py-3.5 shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <div className="flex items-center gap-3 min-w-0 text-left flex-1">
+                <div className="w-10 h-10 rounded-lg bg-[#FF0000]/10 border border-[#FF0000]/30 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8Z"/>
+                    <path fill="#fff" d="M9.7 15.5v-7l6.2 3.5-6.2 3.5Z"/>
+                  </svg>
+                </div>
+                <p className="font-montserrat text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                  Si quieres saber mas, revisa la explicacion del <span className="font-semibold text-[#121212]">Dr. Agustin Landivar</span>.
+                </p>
+              </div>
+              <span className="font-montserrat text-xs sm:text-sm font-semibold text-[#C9A45C] group-hover:text-[#b8934d] whitespace-nowrap shrink-0">
+                Ver en YouTube
+              </span>
+            </a>
+          </div>
         </div>
         
         {/* Contenido principal - Grid 2 columnas */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 xl:gap-16 items-center">
           {/* Imagen a la izquierda */}
           <div className="relative group order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -150,6 +177,7 @@ export default function Bienestar() {
             </p>
           </div>
         </div>
+
       </div>
     </section>
   )

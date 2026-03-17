@@ -26,9 +26,9 @@ export default function Productos() {
       <div className="hidden sm:block absolute bottom-1/4 right-10 w-64 h-64 md:w-80 md:h-80 border-2 border-[#C9A45C]/10 rounded-full animate-pulse-slow"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-[#C9A45C]/5 rounded-full blur-3xl"></div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-[88rem] mx-auto relative z-10">
         {/* Título */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair text-center text-white mb-3 sm:mb-4 px-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-playfair text-center text-white mb-3 sm:mb-4 px-2">
           NUESTRA LÍNEA DE SALES <span className="text-[#C9A45C]">PREMIUM</span>
         </h2>
         
@@ -38,9 +38,9 @@ export default function Productos() {
         </p>
         
         {/* Grid de productos */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 xl:gap-10 max-w-6xl xl:max-w-7xl 2xl:max-w-[84rem] mx-auto">
           {/* Card 1 - Sal grano grueso */}
-          <div className="bg-gradient-to-br from-[#E9E2D6] via-[#ddd5c7] to-[#d1c9bb] rounded-lg p-5 sm:p-6 md:p-8 flex flex-col items-center text-center shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-xl relative overflow-hidden">
+          <div className="bg-gradient-to-br from-[#E9E2D6] via-[#ddd5c7] to-[#d1c9bb] rounded-lg p-5 sm:p-6 md:p-8 xl:p-9 flex flex-col items-center text-center shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-xl relative overflow-hidden">
             {/* Efecto de brillo sutil */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent pointer-events-none"></div>
             
@@ -51,7 +51,7 @@ export default function Productos() {
             {/* Línea divisoria */}
             <div className="w-full h-px bg-gray-800 mb-3 sm:mb-4 md:mb-6 relative z-10"></div>
             
-            <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 mb-3 sm:mb-4 md:mb-6 relative z-10">
+            <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 2xl:w-72 2xl:h-72 mb-3 sm:mb-4 md:mb-6 relative z-10">
               <Image 
                 src="/salymar-granogrueso-sinfondo.png" 
                 alt="Sal grano grueso" 
@@ -96,7 +96,7 @@ export default function Productos() {
           </div>
           
           {/* Card 2 - Sal grano fino */}
-          <div className="bg-gradient-to-br from-[#C9A45C] via-[#b8934d] to-[#a68243] rounded-lg p-5 sm:p-6 md:p-8 flex flex-col items-center text-center shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-[#C9A45C]/50 relative overflow-hidden">
+          <div className="bg-gradient-to-br from-[#C9A45C] via-[#b8934d] to-[#a68243] rounded-lg p-5 sm:p-6 md:p-8 xl:p-9 flex flex-col items-center text-center shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-[#C9A45C]/50 relative overflow-hidden">
             {/* Efecto de brillo sutil */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/20 to-transparent pointer-events-none"></div>
             
@@ -107,7 +107,7 @@ export default function Productos() {
             {/* Línea divisoria */}
             <div className="w-full h-px bg-white/50 mb-3 sm:mb-4 md:mb-6 relative z-10"></div>
             
-            <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 mb-3 sm:mb-4 md:mb-6 relative z-10">
+            <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 2xl:w-72 2xl:h-72 mb-3 sm:mb-4 md:mb-6 relative z-10">
               <Image 
                 src="/salymar-granofino-sinfondo.png" 
                 alt="Sal grano fino" 
@@ -152,7 +152,7 @@ export default function Productos() {
           </div>
           
           {/* Card 3 - Sal grano medio */}
-          <div className="bg-gradient-to-br from-[#E9E2D6] via-[#ddd5c7] to-[#d1c9bb] rounded-lg p-5 sm:p-6 md:p-8 flex flex-col items-center text-center shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-xl relative overflow-hidden">
+          <div className="bg-gradient-to-br from-[#E9E2D6] via-[#ddd5c7] to-[#d1c9bb] rounded-lg p-5 sm:p-6 md:p-8 xl:p-9 flex flex-col items-center text-center shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-xl relative overflow-hidden">
             {/* Efecto de brillo sutil */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent pointer-events-none"></div>
             
@@ -163,7 +163,7 @@ export default function Productos() {
             {/* Línea divisoria */}
             <div className="w-full h-px bg-gray-800 mb-3 sm:mb-4 md:mb-6 relative z-10"></div>
             
-            <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 mb-3 sm:mb-4 md:mb-6 relative z-10">
+            <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 2xl:w-72 2xl:h-72 mb-3 sm:mb-4 md:mb-6 relative z-10">
               <Image 
                 src="/salymar-granomedio-sinfondo.png" 
                 alt="Sal grano medio" 

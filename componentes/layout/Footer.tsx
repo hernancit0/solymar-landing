@@ -26,8 +26,8 @@ export default function Footer() {
         </svg>
       </button>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 sm:py-14 md:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-10 md:mb-12">
+      <div className="max-w-[88rem] mx-auto px-4 sm:px-6 md:px-8 xl:px-10 2xl:px-14 py-12 sm:py-14 md:py-16 xl:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12 xl:gap-14 mb-8 sm:mb-10 md:mb-12">
           {/* Columna 1 - Logo y Marca */}
           <div className="space-y-4 sm:space-y-5 md:space-y-6">
             <div className="flex items-center gap-2 sm:gap-3">
@@ -38,7 +38,7 @@ export default function Footer() {
                 height={50}
                 className="transform rotate-90 w-10 h-10 sm:w-12 sm:h-12"
               />
-              <h3 className="text-2xl sm:text-2xl md:text-3xl font-playfair text-white font-bold">
+              <h3 className="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-playfair text-white font-bold">
                 SolyMar
               </h3>
             </div>

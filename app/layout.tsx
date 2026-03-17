@@ -1,6 +1,7 @@
 import "./globals.css"
 import Header from "@/componentes/layout/Header"
 import Footer from "@/componentes/layout/Footer"
+import FloatingWhatsApp from "@/componentes/ui/FloatingWhatsApp"
 import { Playfair_Display, Montserrat } from "next/font/google"
 import type { Metadata } from "next"
 
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   )
