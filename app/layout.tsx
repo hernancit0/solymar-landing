@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   keywords: "sal marina, sal premium, sal grano grueso, sal grano fino, sal grano medio, sal peruana, sal natural, sal sin aditivos, SolyMar",
   authors: [{ name: "SolyMar" }],
   icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
+    icon: "/icon.png?v=4",
+    shortcut: "/icon.png?v=4",
+    apple: "/icon.png?v=4",
   },
   openGraph: {
     title: "SolyMar - Sal Marina Premium",
