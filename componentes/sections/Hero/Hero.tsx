@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 export default function Hero() {
-  const whatsappUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar sal marina premium. ¿Podrían compartir precios, presentaciones y promociones disponibles?")}`
+  const whatsappUrl = `https://wa.me/51921750966?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar sal marina premium. ¿Podrían compartir precios, presentaciones y promociones disponibles?")}`
 
   return (
     <section id="inicio" className="min-h-screen bg-[#121212] flex items-center px-4 sm:px-6 md:px-8 xl:px-10 2xl:px-14 py-16 sm:py-20 md:py-0 pt-24 sm:pt-28 md:pt-24 overflow-hidden">

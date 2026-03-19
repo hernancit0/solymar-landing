@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const whatsappUrl = "https://wa.me/51979369586?text=%C2%A1Hola%20SolyMar!%20%F0%9F%91%8B%20Vi%20su%20web%20y%20me%20interesa%20conocer%20sus%20sales%20premium%20(grano%20grueso%2C%20fino%20y%20medio).%20%C2%BFPodr%C3%ADan%20enviarme%20precios%2C%20presentaciones%20y%20promociones%20disponibles%3F%20%C2%A1Gracias!";
+  const whatsappUrl = "https://wa.me/51921750966?text=%C2%A1Hola%20SolyMar!%20%F0%9F%91%8B%20Vi%20su%20web%20y%20me%20interesa%20conocer%20sus%20sales%20premium%20(grano%20grueso%2C%20fino%20y%20medio).%20%C2%BFPodr%C3%ADan%20enviarme%20precios%2C%20presentaciones%20y%20promociones%20disponibles%3F%20%C2%A1Gracias!";
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -174,8 +174,8 @@ export default function Footer() {
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 fill-[#C9A45C] flex-shrink-0 mt-0.5 sm:mt-1" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                 </svg>
-                <a href="tel:+51979369586" className="font-montserrat text-gray-400 text-xs sm:text-sm hover:text-[#C9A45C] transition-colors">
-                  +51 979 369 586
+                <a href="tel:+51921750966" className="font-montserrat text-gray-400 text-xs sm:text-sm hover:text-[#C9A45C] transition-colors">
+                  +51 921 750 966
                 </a>
               </li>
             </ul>

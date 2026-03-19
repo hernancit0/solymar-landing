@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 export default function FloatingWhatsApp() {
-  const whatsappUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero información de sus productos y promociones.")}`
+  const whatsappUrl = `https://wa.me/51921750966?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero información de sus productos y promociones.")}`
 
   return (
     <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 xl:bottom-8 xl:right-10 z-[9999]">

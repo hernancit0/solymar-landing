@@ -1,9 +1,9 @@
 import Image from "next/image"
 
 export default function Productos() {
-  const whatsappGruesoUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar SAL GRANO GRUESO. ¿Me comparten precio, presentación y disponibilidad?")}`
-  const whatsappFinoUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar SAL GRANO FINO. ¿Me comparten precio, presentación y disponibilidad?")}`
-  const whatsappMedioUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar SAL GRANO MEDIO. ¿Me comparten precio, presentación y disponibilidad?")}`
+  const whatsappGruesoUrl = `https://wa.me/51921750966?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar SAL GRANO GRUESO. ¿Me comparten precio, presentación y disponibilidad?")}`
+  const whatsappFinoUrl = `https://wa.me/51921750966?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar SAL GRANO FINO. ¿Me comparten precio, presentación y disponibilidad?")}`
+  const whatsappMedioUrl = `https://wa.me/51921750966?text=${encodeURIComponent("¡Hola SolyMar! 👋 Quiero comprar SAL GRANO MEDIO. ¿Me comparten precio, presentación y disponibilidad?")}`
 
   return (
     <section id="productos" className="relative bg-[#121212] py-12 sm:py-16 md:py-20 px-4 pt-20 sm:pt-24 md:pt-32 overflow-hidden">

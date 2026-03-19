@@ -1,5 +1,5 @@
 export default function Promociones() {
-  const whatsappPromocionesUrl = `https://wa.me/51979369586?text=${encodeURIComponent("¡Hola SolyMar! 👋 Me interesa la PROMOCIÓN ESPECIAL. ¿Podrían enviarme el detalle de la oferta y cómo comprar?")}`
+  const whatsappPromocionesUrl = `https://wa.me/51921750966?text=${encodeURIComponent("¡Hola SolyMar! 👋 Me interesa la PROMOCIÓN ESPECIAL. ¿Podrían enviarme el detalle de la oferta y cómo comprar?")}`
 
   return (
     <section id="promociones" className="relative bg-[#121212] py-12 sm:py-16 md:py-20 pt-20 sm:pt-24 md:pt-32 overflow-hidden">

@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 export default function Contacto() {
-  const whatsappUrl = "https://wa.me/51979369586?text=%C2%A1Hola%20SolyMar!%20%F0%9F%91%8B%20Vi%20su%20web%20y%20me%20interesa%20conocer%20sus%20sales%20premium%20(grano%20grueso%2C%20fino%20y%20medio).%20%C2%BFPodr%C3%ADan%20enviarme%20precios%2C%20presentaciones%20y%20promociones%20disponibles%3F%20%C2%A1Gracias!"
+  const whatsappUrl = "https://wa.me/51921750966?text=%C2%A1Hola%20SolyMar!%20%F0%9F%91%8B%20Vi%20su%20web%20y%20me%20interesa%20conocer%20sus%20sales%20premium%20(grano%20grueso%2C%20fino%20y%20medio).%20%C2%BFPodr%C3%ADan%20enviarme%20precios%2C%20presentaciones%20y%20promociones%20disponibles%3F%20%C2%A1Gracias!"
 
   return (
     <section id="contacto" className="relative bg-[#121212] py-12 sm:py-16 md:py-20 px-4 pt-20 sm:pt-24 md:pt-32 overflow-hidden">
